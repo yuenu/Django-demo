@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,13 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'miraiku82@gmail.com'
 EMAIL_HOST_PASSWORD = 'Wak6hcjpw2'
+
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+AWS_ACCESS_KEY_ID = 'AKIAS6HBELL5DHOTUTD3'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
+AWS_STORAGE_BUCKET_NAME = 'django-image-files'
