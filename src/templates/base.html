@@ -27,9 +27,16 @@
           <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
+
+          
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
               <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'api-overview' %}">API</a>
+
+
+
+
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
@@ -42,6 +49,9 @@
               <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
               <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
               {% endif %}
+
+
+              
             </div>
           </div>
         </div>
@@ -64,13 +74,13 @@
         
         <div class="col-md-4">
           <div class="content-section">
-            <h3>Our Sidebar</h3>
-            <p class='text-muted'>You can put any information here you'd like.
+            <h3>My Demo</h3>
+            <p class='text-muted'>You can link below to see my demo
               <ul class="list-group">
-                <li class="list-group-item list-group-item-light">Latest Posts</li>
-                <li class="list-group-item list-group-item-light">Announcements</li>
-                <li class="list-group-item list-group-item-light">Calendars</li>
-                <li class="list-group-item list-group-item-light">etc</li>
+                <li class="list-group-item list-group-item-light">
+                  <a href="#">Vue To-Do List</a>
+                </li>
+
               </ul>
             </p>
           </div>
