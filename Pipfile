@@ -11,7 +11,7 @@ python_version = "3.8"
 
 [packages]
 package-name = "*"
-django = "==3.0"
+django = "==3.0.7"
 pillow = "*"
 dj-database-url = "*"
 gunicorn = "*"
